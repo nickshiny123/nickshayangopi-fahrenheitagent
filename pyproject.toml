@@ -1,0 +1,25 @@
+[project]
+name = "nick-clarisse"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "nickshiny123", email = "nickshayan12@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.5",
+    "langchain-core>=1.6.10",
+    "langchain-google-genai>=4.4.2",
+    "langchain-ollama>=1.1.0",
+    "langchain-tavily>=0.2.18",
+    "pydantic>=2.14.1",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+nick-clarisse = "nick_clarisse:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
